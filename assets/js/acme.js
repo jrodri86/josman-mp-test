@@ -101,7 +101,7 @@ $(document).ready(function() {
 						checkStatus = setInterval(function(){
 
 							// Comprueba estado del pago vía Seach de Merchant_order
-
+							console.log("antes search merchant get");
 							$.get("api/order/status/",{"external_reference":external_reference},function(data){
 								
 								console.log("Search de Merchant_order:");
