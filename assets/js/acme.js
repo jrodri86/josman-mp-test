@@ -75,7 +75,7 @@ $(document).ready(function() {
 					// para recibir las notificaciones en tu endpoint público.
 
 					var orderJSON ={"external_reference": external_reference,
-									"notification_url": "",
+									"notification_url": "https://josman-mp-test.herokuapp.com/api/notifications/",
 									"items" : items
 									};
 
