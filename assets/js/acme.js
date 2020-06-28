@@ -75,7 +75,7 @@ $(document).ready(function() {
 					// para recibir las notificaciones en tu endpoint público.
 
 					var orderJSON ={"external_reference": external_reference,
-									"notification_url": "https://josman-mp-test.herokuapp.com/api/notifications/notifications.txt",
+									"notification_url": "https://josman-mp-test.herokuapp.com/api/notifications/",
 									"items" : items
 									};
 
@@ -102,7 +102,7 @@ $(document).ready(function() {
 
 							// Comprueba estado del pago vía Seach de Merchant_order
 
-							$.get("api/order/status/",{"external_reference":external_reference},function(data){
+							$.get("api/order/status",{"external_reference":external_reference},function(data){
 								
 								console.log("Search de Merchant_order:");
 								console.log(data);
