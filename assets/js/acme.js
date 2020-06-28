@@ -329,7 +329,6 @@ $(document).ready(function() {
 			"external_id": externalStoreID,
 			"name": storeName,
 			"location": {
-				"country": country,
 				"city_name": city,
 				"latitude": latitude,
 				"longitude": longitude,
