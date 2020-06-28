@@ -11,7 +11,7 @@ global $access_token,$collector_id,$notificationJSON;
 
 $lastResource = file_get_contents('../notifications.txt');
 
-$url= "https://josman-mp-test.herokuapp.com/notifications?id=$lastResource&topic=payment";
+$url= "$lastResource?access_token=$access_token";
 
 // REVISAR AQUÍ:
 // Agrega la $url necesaria para revisar el estado del pago en base al recurso recibido de la notificación
