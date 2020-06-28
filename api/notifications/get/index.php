@@ -10,7 +10,15 @@ global $access_token,$collector_id,$notificationJSON;
 // Para ver el estado del pago.
 
 $lastResource = file_get_contents('../notifications.txt');
-
+<script>
+	// other JavaScript code before ...
+	
+	var js_variable_as_placeholder = <?= json_encode($lastResource, 
+		JSON_HEX_TAG); ?>;
+	console.log("Extraccion de notifications.txt: ", js_variable_as_placeholder);
+	
+	// other JavaScript code and after ...
+	</script>
 $url= "$lastResource?access_token=$access_token";
 
 // REVISAR AQUÍ:

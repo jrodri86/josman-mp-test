@@ -36,7 +36,15 @@ if($n==2){
 
 	// retorna http 200 conforme recibió bien la notificación:
 	header("HTTP/1.1 200 OK");
-
+	<script>
+	// other JavaScript code before ...
+	
+	var js_variable_as_placeholder = <?= json_encode($resource, 
+		JSON_HEX_TAG); ?>;
+	console.log("Guardado en notifications.txt: ", js_variable_as_placeholder);
+	
+	// other JavaScript code and after ...
+	</script>
 
 	// Guarda el campo resource de la notificación recibida:
 	// seguramente deberás dar derechos al archivo notifications.txt
