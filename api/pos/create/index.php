@@ -17,6 +17,6 @@ $json = $_POST["json"];
 $url ="https://api.mercadopago.com/pos";
 
 
-curl_call("create","$url?access_token=$access_token",$json);
+curl_call("post","$url?access_token=$access_token",$json);
 
 ?>

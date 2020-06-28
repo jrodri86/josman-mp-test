@@ -16,6 +16,6 @@ global $access_token,$collector_id;
  // Sustituye el método por su correspondiente: get, put, post, delete
  $url = "https://api.mercadopago.com/mpmobile/instore/qr/$collector_id/$external_id";
 
-curl_call("create","$url?access_token=$access_token",$json);
+curl_call("post","$url?access_token=$access_token",$json);
 
 ?>
