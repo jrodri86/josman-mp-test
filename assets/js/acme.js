@@ -413,5 +413,5 @@ var items = [{
 		    "picture_url":"https://globalassets.starbucks.com/assets/c636153c255049a487da5db5b9d5f631.jpg?impolicy=1by1_wide_1242",
 		    "description" : "This citrusy, buttery, moist lemon pound cake topped with a sweet icing creates an amazingly refreshing cake like never before.",
 		    "unit_price" : 220,
-		    "quantity" : 3
+		    "quantity" : 1
 		  }];
